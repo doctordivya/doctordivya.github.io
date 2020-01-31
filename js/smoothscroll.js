@@ -1,0 +1,31 @@
+var activeElement,observer,defaultOptions={frameRate:150,animationTime:400,stepSize:120,pulseAlgorithm:!0,pulseScale:8,pulseNormalize:1,accelerationDelta:20,accelerationMax:1,keyboardSupport:!0,arrowScroll:50,touchpadSupport:!0,fixedBackground:!0,excluded:""},options=defaultOptions,isExcluded=!1,isFrame=!1,direction={x:0,y:0},initDone=!1,root=document.documentElement,deltaBuffer=[120,120,120],key={left:37,up:38,right:39,down:40,spacebar:32,pageup:33,pagedown:34,end:35,home:36};function initTest(){var e=!1;if((document.URL.indexOf("google.com/reader/view")>-1&&(e=!0),options.excluded)){var t=options.excluded.split(/[,\n] ?/);t.push("mail.google.com");for(var o=t.length;o--;)
+if(document.URL.indexOf(t[o])>-1){observer&&observer.disconnect(),removeEvent("mousewheel",wheel),(e=!0),(isExcluded=!0);break}}
+e&&removeEvent("keydown",keydown),options.keyboardSupport&&!e&&addEvent("keydown",keydown)}
+function init(){if(document.body){var e=document.body,t=document.documentElement,o=window.innerHeight,n=e.scrollHeight;if(((root=document.compatMode.indexOf("CSS")>=0?t:e),(activeElement=e),initTest(),(initDone=!0),top!=self))
+isFrame=!0;else if(n>o&&(e.offsetHeight<=o||t.offsetHeight<=o)){var i=!1,r=function(){i||t.scrollHeight==document.height||((i=!0),setTimeout(function(){(t.style.height=document.height+"px"),(i=!1)},500))};(t.style.height="auto"),setTimeout(r,10);if(((observer=new MutationObserver(r)).observe(e,{attributes:!0,childList:!0,characterData:!1}),root.offsetHeight<=o)){var a=document.createElement("div");(a.style.clear="both"),e.appendChild(a)}}
+if(document.URL.indexOf("mail.google.com")>-1){var l=document.createElement("style");(l.innerHTML=".iu { visibility: hidden }"),(document.getElementsByTagName("head")[0]||t).appendChild(l)}else if(document.URL.indexOf("www.facebook.com")>-1){var s=document.getElementById("home_stream");s&&(s.style.webkitTransform="translateZ(0)")}
+options.fixedBackground||isExcluded||((e.style.backgroundAttachment="scroll"),(t.style.backgroundAttachment="scroll"))}}
+var que=[],pending=!1,lastScroll=+new Date();function scrollArray(e,t,o,n){if((n||(n=1e3),directionCheck(t,o),1!=options.accelerationMax)){var i=+new Date()-lastScroll;if(i<options.accelerationDelta){var r=(1+30/i)/2;r>1&&((r=Math.min(r,options.accelerationMax)),(t*=r),(o*=r))}
+lastScroll=+new Date()}
+if((que.push({x:t,y:o,lastX:t<0?0.99:-0.99,lastY:o<0?0.99:-0.99,start:+new Date()}),!pending)){var a=e===document.body,l=function(i){for(var r=+new Date(),s=0,u=0,c=0;c<que.length;c++){var d=que[c],f=r-d.start,m=f>=options.animationTime,p=m?1:f/options.animationTime;options.pulseAlgorithm&&(p=pulse(p));var h=(d.x*p-d.lastX)>>0,v=(d.y*p-d.lastY)>>0;(s+=h),(u+=v),(d.lastX+=h),(d.lastY+=v),m&&(que.splice(c,1),c--)}
+a?window.scrollBy(s,u):(s&&(e.scrollLeft+=s),u&&(e.scrollTop+=u)),t||o||(que=[]),que.length?requestFrame(l,e,n/options.frameRate+1):(pending=!1)};requestFrame(l,e,0),(pending=!0)}}
+function wheel(e){initDone||init();var t=e.target,o=overflowingAncestor(t);if(!o||e.defaultPrevented||isNodeName(activeElement,"embed")||(isNodeName(t,"embed")&&/\.pdf/i.test(t.src)))
+return!0;var n=e.wheelDeltaX||0,i=e.wheelDeltaY||0;if((n||i||(i=e.wheelDelta||0),!options.touchpadSupport&&isTouchpad(i)))
+return!0;Math.abs(n)>1.2&&(n*=options.stepSize/120),Math.abs(i)>1.2&&(i*=options.stepSize/120),scrollArray(o,-n,-i),e.preventDefault()}
+function keydown(e){var t=e.target,o=e.ctrlKey||e.altKey||e.metaKey||(e.shiftKey&&e.keyCode!==key.spacebar);if(/input|textarea|select|embed/i.test(t.nodeName)||t.isContentEditable||e.defaultPrevented||o)
+return!0;if(isNodeName(t,"button")&&e.keyCode===key.spacebar)return!0;var n=0,i=0,r=overflowingAncestor(activeElement),a=r.clientHeight;switch((r==document.body&&(a=window.innerHeight),e.keyCode)){case key.up:i=-options.arrowScroll;break;case key.down:i=options.arrowScroll;break;case key.spacebar:i=-(e.shiftKey?1:-1)*a*0.9;break;case key.pageup:i=0.9*-a;break;case key.pagedown:i=0.9*a;break;case key.home:i=-r.scrollTop;break;case key.end:var l=r.scrollHeight-r.scrollTop-a;i=l>0?l+10:0;break;case key.left:n=-options.arrowScroll;break;case key.right:n=options.arrowScroll;break;default:return!0}
+scrollArray(r,n,i),e.preventDefault()}
+function mousedown(e){activeElement=e.target}
+var cache={};setInterval(function(){cache={}},1e4);var deltaBufferTimer,uniqueID=(function(){var e=0;return function(t){return t.uniqueID||(t.uniqueID=e++)}})();function setCache(e,t){for(var o=e.length;o--;)cache[uniqueID(e[o])]=t;return t}
+function overflowingAncestor(e){var t=[],o=root.scrollHeight;do{var n=cache[uniqueID(e)];if(n)return setCache(t,n);if((t.push(e),o===e.scrollHeight)){if(!isFrame||root.clientHeight+10<o)
+return setCache(t,document.body)}else if(e.clientHeight+10<e.scrollHeight&&((overflow=getComputedStyle(e,"").getPropertyValue("overflow-y")),"scroll"===overflow||"auto"===overflow))
+return setCache(t,e)}while((e=e.parentNode));}
+function addEvent(e,t,o){window.addEventListener(e,t,o||!1)}
+function removeEvent(e,t,o){window.removeEventListener(e,t,o||!1)}
+function isNodeName(e,t){return(e.nodeName||"").toLowerCase()===t.toLowerCase()}
+function directionCheck(e,t){(e=e>0?1:-1),(t=t>0?1:-1),(direction.x===e&&direction.y===t)||((direction.x=e),(direction.y=t),(que=[]),(lastScroll=0))}
+function isTouchpad(e){if(e){(e=Math.abs(e)),deltaBuffer.push(e),deltaBuffer.shift(),clearTimeout(deltaBufferTimer),(deltaBufferTimer=setTimeout(function(){chrome.storage.local.set({deltaBuffer:deltaBuffer})},1e3));var t=deltaBuffer[0]==deltaBuffer[1]&&deltaBuffer[1]==deltaBuffer[2],o=isDivisible(deltaBuffer[0],120)&&isDivisible(deltaBuffer[1],120)&&isDivisible(deltaBuffer[2],120);return!(t||o)}}
+function isDivisible(e,t){return Math.floor(e/t)==e/t}
+var requestFrame=window.requestAnimationFrame||window.webkitRequestAnimationFrame||function(e,t,o){window.setTimeout(e,o||1e3/60)},MutationObserver=window.MutationObserver||window.WebKitMutationObserver;function pulse_(e){var t,o;return((e*=options.pulseScale)<1?(t=e-(1-Math.exp(-e))):((e-=1),(t=(o=Math.exp(-1))+(1-Math.exp(-e))*(1-o))),t*options.pulseNormalize)}
+function pulse(e){return e>=1?1:e<=0?0:(1==options.pulseNormalize&&(options.pulseNormalize/=pulse_(1)),pulse_(e))}
+addEvent("mousedown",mousedown),addEvent("mousewheel",wheel),addEvent("load",init)
