@@ -1,407 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="renderer" content="webkit" />
-    <meta name="x5-orientation" content="portrait" />
-    <meta name="x5-fullscreen" content="true" />
-    <meta name="x5-page-mode" content="app" />
-    <meta name="screen-orientation" content="portrait" />
-    <meta name="full-screen" content="yes" />
-    <meta name="imagemode" content="force" />
-    <meta name="browsermode" content="application" />
-    <meta name="layoutmode" content="fitscreen" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="application-name" content="Dr. Divya" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent"
-    />
-    <meta name="apple-mobile-web-app-title" content="Dr. Divya" />
-    <meta property="og:title" content="Dr. Divya" />
-    <meta property="og:site_name" content="Doctor Divya" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://doctordivya.com/" />
-    <meta
-      property="og:description"
-      content="Doctor Divya Respiratory medicine, asthma alergy, COPD specialist"
-    />
 
-    <meta name="robots" content="index,follow" />
-    <meta name="googlebot" content="index,follow" />
-    <meta
-      name="google-site-verification"
-      content="69BhtheR_CUQT3PrTt4hFRfKLFeZSbUPsqm5uIWrZ1M"
-    />
-    <meta
-      name="norton-safeweb-site-verification"
-      content="m5jwgjsrzyvvmpi7fwspff73toas06x-eb1ye58f0514r5jpiuv83kxnh388-mdc29kl5eryzjw-w5oza6ioljv-5bxbiwr3umkmji96fow5vlisgyi4wxvxuy5xaxsn"
-    />
-    <meta name="msvalidate.01" content="2EFC0FF46871B7FD40DE20D377DE6028" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="renderer" content="webkit" />
+  <meta name="x5-orientation" content="portrait" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="x5-page-mode" content="app" />
+  <meta name="screen-orientation" content="portrait" />
+  <meta name="full-screen" content="yes" />
+  <meta name="imagemode" content="force" />
+  <meta name="browsermode" content="application" />
+  <meta name="layoutmode" content="fitscreen" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="Dr. Divya" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Dr. Divya" />
+  <meta property="og:title" content="Dr. Divya" />
+  <meta property="og:site_name" content="Doctor Divya" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://doctordivya.com/" />
+  <meta property="og:description" content="Doctor Divya Respiratory medicine, asthma alergy, COPD specialist" />
 
-    <meta name="theme-color" content="#FFFFF0" />
-    <title>Dr. Divya</title>
-    <meta
-      name="description"
-      content="Doctor Divya Respiratory medicine, asthma alergy, COPD specialist"
-    />
-    <meta name="author" content="Doctor Divya" />
-    <meta name="msapplication-navbutton-color" content="#2F2Fa2" />
-    <meta name="msapplication-TileImage" content="icons/mstile-150x150.png" />
-    <meta name="msapplication-TileColor" content="#2F2Fa2" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="msapplication-starturl" content="/" />
-    <!-- Modernizr -->
-    <script async src="js/modernizr.js"></script>
+  <meta name="robots" content="index,follow" />
+  <meta name="googlebot" content="index,follow" />
+  <meta name="google-site-verification" content="69BhtheR_CUQT3PrTt4hFRfKLFeZSbUPsqm5uIWrZ1M" />
+  <meta name="norton-safeweb-site-verification"
+    content="m5jwgjsrzyvvmpi7fwspff73toas06x-eb1ye58f0514r5jpiuv83kxnh388-mdc29kl5eryzjw-w5oza6ioljv-5bxbiwr3umkmji96fow5vlisgyi4wxvxuy5xaxsn" />
+  <meta name="msvalidate.01" content="2EFC0FF46871B7FD40DE20D377DE6028" />
 
-    <link rel="manifest" href="manifest.json" />
-    <link rel="mask-icon" href=icons/favicon.svg" color="#2F2Fa2" />
+  <meta name="theme-color" content="#FFFFF0" />
+  <title>Dr. Divya</title>
+  <meta name="description" content="Doctor Divya Respiratory medicine, asthma alergy, COPD specialist" />
+  <meta name="author" content="Doctor Divya" />
+  <meta name="msapplication-navbutton-color" content="#2F2Fa2" />
+  <meta name="msapplication-TileImage" content="icons/mstile-150x150.png" />
+  <meta name="msapplication-TileColor" content="#2F2Fa2" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="msapplication-starturl" content="/" />
+  <!-- Modernizr -->
+  <script async src="js/modernizr.js"></script>
 
-    <link
-      rel="prefetch"
-      onload="this.rel = 'icon'"
-      type="image/png"
-      sizes="96x96"
-      href="icons/favicon-96x96.png"
-    />
-    <link
-      rel="prefetch"
-      onload="this.rel = 'icon'"
-      type="image/png"
-      sizes="128x128"
-      href="icons/favicon-128x128.png"
-    />
-    <link
-      rel="prefetch"
-      onload="this.rel = 'icon'"
-      type="image/png"
-      sizes="144x144"
-      href="icons/favicon-144x144.png"
-    />
-    <link
-      rel="prefetch"
-      onload="this.rel = 'icon'"
-      type="image/png"
-      sizes="72x72"
-      href="icons/favicon-72x72.png"
-    />
-    <link
-      rel="prefetch"
-      onload="this.rel = 'icon'"
-      type="image/png"
-      sizes="152x152"
-      href="icons/favicon-152x152.png"
-    />
-    <link
-      rel="prefetch"
-      onload="this.rel = 'icon'"
-      type="image/png"
-      sizes="192x192"
-      href="icons/favicon-192x192.png"
-    />
-    <link
-      rel="prefetch"
-      onload="this.rel = 'icon'"
-      type="image/png"
-      sizes="384x384"
-      href="icons/favicon-384x384.png"
-    />
-    <link
-      rel="prefetch"
-      onload="this.rel = 'icon'"
-      type="image/png"
-      sizes="512x512"
-      href="icons/favicon-512x512.png"
-    />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="mask-icon" href=icons/favicon.svg" color="#2F2Fa2" />
 
-    <link
-      rel="prefetch"
-      onload="this.rel = 'mask-icon'"
-      href="icons/favicon.svg"
-      color="#2F2Fa2"
-    />
-    <link
-      rel="prefetch"
-      onload="this.rel = 'shortcut icon'"
-      href="icons/favicon.ico"
-    />
-    <meta name="msapplication-config" content="browserconfig.xml" />
-    <link
-      rel="prefetch"
-      onload="this.rel = 'icon'"
-      type="image/x-icon"
-      href="icons/favicon.ico"
-    />
-    <link
-      rel="prefetch"
-      onload="this.rel = 'apple-touch-icon'"
-      type="image/png"
-      sizes="72x72"
-      href="icons/favicon-72x72.png"
-    />
-    <link
-      rel="prefetch"
-      onload="this.rel = 'apple-touch-icon'"
-      type="image/png"
-      sizes="96x96"
-      href="icons/favicon-96x96.png"
-    />
-    <link
-      rel="prefetch"
-      onload="this.rel =
-    'apple-touch-icon'"
-      type="image/png"
-      sizes="128x128"
-      href="icons/favicon-128x128.png"
-    />
-    <link
-      rel="prefetch"
-      onload="this.rel =
-    'apple-touch-icon'"
-      type="image/png"
-      sizes="144x144"
-      href="icons/favicon-144x144.png"
-    />
-    <link
-      rel="prefetch"
-      onload="this.rel =
-    'apple-touch-icon'"
-      type="image/png"
-      sizes="152x152"
-      href="icons/favicon-152x152.png"
-    />
-    <link
-      rel="prefetch"
-      onload="this.rel =
-    'apple-touch-icon'"
-      type="image/png"
-      sizes="192x192"
-      href="icons/favicon-192x192.png"
-    />
-    <link
-      rel="prefetch"
-      onload="this.rel =
-    'apple-touch-icon'"
-      type="image/png"
-      sizes="384x384"
-      href="icons/favicon-384x384.png"
-    />
-    <link
-      rel="prefetch"
-      onload="this.rel =
-    'apple-touch-icon'"
-      type="image/png"
-      sizes="512x512"
-      href="icons/favicon-512x512.png"
-    />
-    <link
-      rel="prefetch"
-      href="icons/iphone5_splash.png"
-      media="(device-width: 320px) and
-    (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
-      rel="apple-touch-startup-image"
-    />
-    <link
-      rel="prefetch"
-      href="icons/iphone6_splash.png"
-      media="(device-width: 375px) and
-    (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
-      rel="apple-touch-startup-image"
-    />
-    <link
-      rel="prefetch"
-      href="icons/iphoneplus_splash.png"
-      media="(device-width: 621px) and
-    (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)"
-      rel="apple-touch-startup-image"
-    />
-    <link
-      rel="prefetch"
-      href="icons/iphonex_splash.png"
-      media="(device-width: 375px) and
-    (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
-      rel="apple-touch-startup-image"
-    />
-    <link
-      rel="prefetch"
-      href="icons/iphonexr_splash.png"
-      media="(device-width: 414px) and
-    (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
-      rel="apple-touch-startup-image"
-    />
-    <link
-      rel="prefetch"
-      href="icons/iphonexsmax_splash.png"
-      media="(device-width: 414px) and
-    (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
-      rel="apple-touch-startup-image"
-    />
-    <link
-      rel="prefetch"
-      href="icons/ipad_splash.png"
-      media="(device-width: 768px) and (device-height:
-    1024px) and (-webkit-device-pixel-ratio: 2)"
-      rel="apple-touch-startup-image"
-    />
-    <link
-      rel="prefetch"
-      href="icons/ipadpro1_splash.png"
-      media="(device-width: 834px) and (device-height: 1112px) and
-    (-webkit-device-pixel-ratio: 2)"
-      rel="apple-touch-startup-image"
-    />
-    <link
-      rel="prefetch"
-      href="icons/ipadpro3_splash.png"
-      media="(device-width: 834px)
-    and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"
-      rel="apple-touch-startup-image"
-    />
-    <link
-      rel="prefetch"
-      href="icons/ipadpro2_splash.png"
-      media="(device-width: 1024px) and
-    (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
-      rel="apple-touch-startup-image"
-    />
-    <!-- Main Bootstrap styling -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- Custom styling -->
-    <link href="css/styles.css" rel="stylesheet" />
-    <!-- Iconic font - FontAwesome -->
-    <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-      rel="preload"
-      as="style"
-    />
-    <!-- Google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic&display=swap"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- Site thumbnail -->
-    <link rel="image_src" href="thumbnail.png" />
-    <!-- Favicon -->
-    <link rel="icon" type="image/ico" href="favicon.ico" />
-    <!-- HTML5 shiv and Respond.js for IE8 support of HTML5 elements and media queries. All other JS at the end of file. -->
-  </head>
+  <link rel="prefetch" onload="this.rel = 'icon'" type="image/png" sizes="96x96" href="icons/favicon-96x96.png" />
+  <link rel="prefetch" onload="this.rel = 'icon'" type="image/png" sizes="128x128" href="icons/favicon-128x128.png" />
+  <link rel="prefetch" onload="this.rel = 'icon'" type="image/png" sizes="144x144" href="icons/favicon-144x144.png" />
+  <link rel="prefetch" onload="this.rel = 'icon'" type="image/png" sizes="72x72" href="icons/favicon-72x72.png" />
+  <link rel="prefetch" onload="this.rel = 'icon'" type="image/png" sizes="152x152" href="icons/favicon-152x152.png" />
+  <link rel="prefetch" onload="this.rel = 'icon'" type="image/png" sizes="192x192" href="icons/favicon-192x192.png" />
+  <link rel="prefetch" onload="this.rel = 'icon'" type="image/png" sizes="384x384" href="icons/favicon-384x384.png" />
+  <link rel="prefetch" onload="this.rel = 'icon'" type="image/png" sizes="512x512" href="icons/favicon-512x512.png" />
 
-  <body data-spy="scroll" data-target=".navbar" data-offset="61">
-    <!-- Start preloader -->
-    <div class="preloader">
-      <div class="spinner">
-        <div class="bounce1"></div>
-        <div class="bounce2"></div>
-        <div class="bounce3"></div>
+  <link rel="prefetch" onload="this.rel = 'mask-icon'" href="icons/favicon.svg" color="#2F2Fa2" />
+  <link rel="prefetch" onload="this.rel = 'shortcut icon'" href="icons/favicon.ico" />
+  <meta name="msapplication-config" content="browserconfig.xml" />
+  <link rel="prefetch" onload="this.rel = 'icon'" type="image/x-icon" href="icons/favicon.ico" />
+  <link rel="prefetch" onload="this.rel = 'apple-touch-icon'" type="image/png" sizes="72x72"
+    href="icons/favicon-72x72.png" />
+  <link rel="prefetch" onload="this.rel = 'apple-touch-icon'" type="image/png" sizes="96x96"
+    href="icons/favicon-96x96.png" />
+  <link rel="prefetch" onload="this.rel =
+    'apple-touch-icon'" type="image/png" sizes="128x128" href="icons/favicon-128x128.png" />
+  <link rel="prefetch" onload="this.rel =
+    'apple-touch-icon'" type="image/png" sizes="144x144" href="icons/favicon-144x144.png" />
+  <link rel="prefetch" onload="this.rel =
+    'apple-touch-icon'" type="image/png" sizes="152x152" href="icons/favicon-152x152.png" />
+  <link rel="prefetch" onload="this.rel =
+    'apple-touch-icon'" type="image/png" sizes="192x192" href="icons/favicon-192x192.png" />
+  <link rel="prefetch" onload="this.rel =
+    'apple-touch-icon'" type="image/png" sizes="384x384" href="icons/favicon-384x384.png" />
+  <link rel="prefetch" onload="this.rel =
+    'apple-touch-icon'" type="image/png" sizes="512x512" href="icons/favicon-512x512.png" />
+  <link rel="prefetch" href="icons/iphone5_splash.png" media="(device-width: 320px) and
+    (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link rel="prefetch" href="icons/iphone6_splash.png" media="(device-width: 375px) and
+    (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link rel="prefetch" href="icons/iphoneplus_splash.png" media="(device-width: 621px) and
+    (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link rel="prefetch" href="icons/iphonex_splash.png" media="(device-width: 375px) and
+    (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link rel="prefetch" href="icons/iphonexr_splash.png" media="(device-width: 414px) and
+    (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link rel="prefetch" href="icons/iphonexsmax_splash.png" media="(device-width: 414px) and
+    (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link rel="prefetch" href="icons/ipad_splash.png" media="(device-width: 768px) and (device-height:
+    1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link rel="prefetch" href="icons/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and
+    (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link rel="prefetch" href="icons/ipadpro3_splash.png" media="(device-width: 834px)
+    and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link rel="prefetch" href="icons/ipadpro2_splash.png" media="(device-width: 1024px) and
+    (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <!-- Main Bootstrap styling -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" media="print" onload="this.media='all'">
+  <!-- Custom styling -->
+  <link rel="stylesheet" href="css/styles.css" media="print" onload="this.media='all'">
+  <!-- Iconic font - FontAwesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    media="print" onload="this.media='all'">
+  <!-- Google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+    media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+    media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic&display=swap"
+    media="print" onload="this.media='all'">
+  <!-- Site thumbnail -->
+  <link rel="image_src" href="thumbnail.png" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/ico" href="favicon.ico" />
+  <!-- HTML5 shiv and Respond.js for IE8 support of HTML5 elements and media queries. All other JS at the end of file. -->
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="61">
+  <!-- Start preloader -->
+  <div class="preloader">
+    <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
+  </div>
+  <!-- End preloader -->
+  <!-- Start navigation -->
+  <div class="navbar navbar-default navbar-transparent navbar-fixed-top" role="navigation"
+    data-start="padding: 10px 0px; background: rgba(255, 255, 255, .1); border-color: rgba(255, 255, 255, .1);"
+    data-20p="padding: 0px 0px; background: rgba(255, 255, 255, .95); border-color: rgba(231, 231, 231, 1);">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- Light and dark logo -->
+        <a href="#intro" class="navbar-brand">
+          <img class="img-responsive" src="img/logo-light.png" alt="" data-start="opacity: 1;" data-20p="opacity: 0;" />
+          <img class="img-responsive" src="img/logo.png" alt="" data-start="opacity: 0;" data-20p="opacity: 1;" />
+        </a>
+      </div>
+      <!-- Navigation links -->
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#intro">Home</a></li>
+          <li>
+            <a href="#team-top" data-start="color: rgb(255, 255, 255);" data-20p="color: rgb(0, 0, 0);">Contact</a>
+          </li>
+          <li>
+            <a href="#contact-top" data-start="color: rgb(255, 255, 255);" data-20p="color: rgb(0, 0, 0);">Map</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <!-- End preloader -->
-    <!-- Start navigation -->
-    <div
-      class="navbar navbar-default navbar-transparent navbar-fixed-top"
-      role="navigation"
-      data-start="padding: 10px 0px; background: rgba(255, 255, 255, .1); border-color: rgba(255, 255, 255, .1);"
-      data-20p="padding: 0px 0px; background: rgba(255, 255, 255, .95); border-color: rgba(231, 231, 231, 1);"
-    >
-      <div class="container">
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target="#navbar-collapse"
-          >
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- Light and dark logo -->
-          <a href="#intro" class="navbar-brand">
-            <img
-              class="img-responsive"
-              src="img/logo-light.png"
-              alt=""
-              data-start="opacity: 1;"
-              data-20p="opacity: 0;"
-            />
-            <img
-              class="img-responsive"
-              src="img/logo.png"
-              alt=""
-              data-start="opacity: 0;"
-              data-20p="opacity: 1;"
-            />
-          </a>
-        </div>
-        <!-- Navigation links -->
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#intro">Home</a></li>
-            <li>
-              <a
-                href="#team-top"
-                data-start="color: rgb(255, 255, 255);"
-                data-20p="color: rgb(0, 0, 0);"
-                >Contact</a
-              >
-            </li>
-            <li>
-              <a
-                href="#contact-top"
-                data-start="color: rgb(255, 255, 255);"
-                data-20p="color: rgb(0, 0, 0);"
-                >Map</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- End navigation -->
-    <!-- Start intro -->
-    <section
-      id="intro"
-      class="parallax"
-      data-start="background-position: 50% -10px;"
-      data-100p="background-position: 50% 60px;"
-    >
-      <div class="section-overlay">
-        <div class="float-content">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12">
-                <div id="carousel-intro" class="carousel">
-                  <div class="carousel-inner text-center">
-                    <div class="active item">
-                      <h1 class="text-uppercase light">Doctor Divya</h1>
-                      <h5 class="smoke">M.D. M.B.B.S.</h5>
-                      <h5 class="smoke">Consultation Time 06.30pm to 08.30pm</h5>
-                      <a href="tel:07736029268" class="btn">Enquiry 07736029268</a>
-                    </div>
-                    <div class="item">
-                      <h1 class="text-uppercase light">Doctor Divya</h1>
-                      <h5 class="smoke">Respiratory Medicine</h5>
-                      <h5 class="smoke">Consultation Time 06.30pm to 08.30pm</h5>
-                      <a href="tel:07736029268" class="btn">Enquiry 07736029268</a>
-                    </div>
+  </div>
+  <!-- End navigation -->
+  <!-- Start intro -->
+  <section id="intro" class="parallax" data-start="background-position: 50% -10px;"
+    data-100p="background-position: 50% 60px;">
+    <div class="section-overlay">
+      <div class="float-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div id="carousel-intro" class="carousel">
+                <div class="carousel-inner text-center">
+                  <div class="active item">
+                    <h1 class="text-uppercase light">Doctor Divya</h1>
+                    <h5 class="smoke">M.D. M.B.B.S.</h5>
+                    <h5 class="smoke">Consultation Time 06.30pm to 08.30pm</h5>
+                    <a href="tel:07736029268" class="btn">Enquiry 07736029268</a>
+                  </div>
+                  <div class="item">
+                    <h1 class="text-uppercase light">Doctor Divya</h1>
+                    <h5 class="smoke">Respiratory Medicine</h5>
+                    <h5 class="smoke">Consultation Time 06.30pm to 08.30pm</h5>
+                    <a href="tel:07736029268" class="btn">Enquiry 07736029268</a>
                   </div>
                 </div>
               </div>
@@ -409,426 +188,377 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- End intro -->
-    <!-- Start services -->
-    <section id="services" class="white-bg">
-      <div class="container">
-        <div class="row divide-md">
-          <!-- Top content / image service -->
-          <div
-            class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 divide-md text-center"
-          >
-            <h2>Dr. Divya</h2>
-            <hr class="title-divider" />
-            <p>
-              Specialist in Pulmonary medicine. Her expertise lies in Asthma and
-              Alergy, Lung Infections, Pneumonia, COPD, Sleep disorders and any
-              other respiratory diseases.
-            </p>
+    </div>
+  </section>
+  <!-- End intro -->
+  <!-- Start services -->
+  <section id="services" class="white-bg">
+    <div class="container">
+      <div class="row divide-md">
+        <!-- Top content / image service -->
+        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 divide-md text-center">
+          <h2>Dr. Divya</h2>
+          <hr class="title-divider" />
+          <p>
+            Specialist in Pulmonary medicine. Her expertise lies in Asthma and
+            Alergy, Lung Infections, Pneumonia, COPD, Sleep disorders and any
+            other respiratory diseases.
+          </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-sm-12 divide-md">
+          <img class="img-responsive" src="img/services-01.jpg" alt="" />
+        </div>
+        <div class="clearfix"></div>
+        <!-- Service #1 -->
+        <div class="col-sm-4 divide-md text-center">
+          <div class="divya-icon-services">
+            <svg viewBox="0 0 32 32">
+              <use xlink:href="#settings-toolkit"></use>
+            </svg>
           </div>
-          <div class="clearfix"></div>
-          <div class="col-sm-12 divide-md">
-            <img class="img-responsive" src="img/services-01.jpg" alt="" />
+          <div class="divide-xs"></div>
+          <h3>COPD</h3>
+          <h4 class="smoke">Chronic obstructive pulmonary disease</h4>
+          <p>
+            Even for more advanced stages of disease, effective therapy is
+            available that can control symptoms, reduce your risk of
+            complications and exacerbations, and improve your ability to lead
+            an active life.
+          </p>
+        </div>
+        <!-- Service #2 -->
+        <div class="col-sm-4 divide-md text-center">
+          <div class="divya-icon-services">
+            <svg viewBox="0 0 32 32">
+              <use xlink:href="#monocle-mustache"></use>
+            </svg>
           </div>
-          <div class="clearfix"></div>
-          <!-- Service #1 -->
-          <div class="col-sm-4 divide-md text-center">
-            <div class="divya-icon-services">
-              <svg viewBox="0 0 32 32">
-                <use xlink:href="#settings-toolkit"></use>
-              </svg>
-            </div>
-            <div class="divide-xs"></div>
-            <h3>COPD</h3>
-            <h4 class="smoke">Chronic obstructive pulmonary disease</h4>
-            <p>
-              Even for more advanced stages of disease, effective therapy is
-              available that can control symptoms, reduce your risk of
-              complications and exacerbations, and improve your ability to lead
-              an active life.
-            </p>
+          <div class="divide-xs"></div>
+          <h3>Asthma</h3>
+          <h4 class="smoke">Asthma</h4>
+          <p>
+            The right medications for you depend on a number of things — your
+            age, symptoms, asthma triggers and what works best to keep your
+            asthma under control. Your treatment should be flexible and based
+            on changes in your symptoms, which should be assessed thoroughly
+            each time you see your doctor.
+          </p>
+        </div>
+        <!-- Service #3 -->
+        <div class="col-sm-4 divide-md text-center">
+          <div class="divya-icon-services">
+            <svg viewBox="0 0 32 32">
+              <use xlink:href="#book-download"></use>
+            </svg>
           </div>
-          <!-- Service #2 -->
-          <div class="col-sm-4 divide-md text-center">
-            <div class="divya-icon-services">
-              <svg viewBox="0 0 32 32">
-                <use xlink:href="#monocle-mustache"></use>
-              </svg>
-            </div>
-            <div class="divide-xs"></div>
-            <h3>Asthma</h3>
-            <h4 class="smoke">Asthma</h4>
-            <p>
-              The right medications for you depend on a number of things — your
-              age, symptoms, asthma triggers and what works best to keep your
-              asthma under control. Your treatment should be flexible and based
-              on changes in your symptoms, which should be assessed thoroughly
-              each time you see your doctor.
-            </p>
-          </div>
-          <!-- Service #3 -->
-          <div class="col-sm-4 divide-md text-center">
-            <div class="divya-icon-services">
-              <svg viewBox="0 0 32 32">
-                <use xlink:href="#book-download"></use>
-              </svg>
-            </div>
-            <div class="divide-xs"></div>
-            <h3>Allergy</h3>
-            <h4 class="smoke">Allergy</h4>
-            <p>
-              Seek medical care each time allergy occurs. Even if their symptoms
-              go away. Your doctor will help you take steps to identify and
-              avoid your allergy triggers. Depending on your allergy,
-              medications can help reduce your immune system reaction and ease
-              symptoms.
-            </p>
-          </div>
-          <div class="clearfix"></div>
+          <div class="divide-xs"></div>
+          <h3>Allergy</h3>
+          <h4 class="smoke">Allergy</h4>
+          <p>
+            Seek medical care each time allergy occurs. Even if their symptoms
+            go away. Your doctor will help you take steps to identify and
+            avoid your allergy triggers. Depending on your allergy,
+            medications can help reduce your immune system reaction and ease
+            symptoms.
+          </p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </section>
+  <!-- End services -->
+  <!-- Start logos -->
+  <section id="clients" class="parallax" data-bottom-top="background-position: 50% -50px;"
+    data-top-bottom="background-position: 50% 0px;">
+    <div class="section-overlay"></div>
+    <div class="container2">
+      <div class="divide-lg">
+        <div class="text-center light warning-bg">
+          In the case of a medical emergency, go directly to the emergency
+          department of your nearest hospital or call 108.
         </div>
       </div>
-    </section>
-    <!-- End services -->
-    <!-- Start logos -->
-    <section
-      id="clients"
-      class="parallax"
-      data-bottom-top="background-position: 50% -50px;"
-      data-top-bottom="background-position: 50% 0px;"
-    >
-      <div class="section-overlay"></div>
-      <div class="container2">
-        <div class="divide-lg">
-          <div class="text-center light warning-bg">
-            In the case of a medical emergency, go directly to the emergency
-            department of your nearest hospital or call 108.
-          </div>
+    </div>
+  </section>
+  <!-- End logos -->
+  <!-- Start features -->
+  <section id="features" class="white-bg">
+    <div class="container">
+      <div class="row divide-md">
+        <!-- Top content / image feature -->
+        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 divide-md text-center">
+          <hr class="title-divider" />
+          <p>
+            Dr. Divya has recived M.D. from M.E.S. Medical College
+            (Perintalmanna). She has received M.B.B.S. from jubilee mission
+            hospital (Thrissur).
+          </p>
         </div>
-      </div>
-    </section>
-    <!-- End logos -->
-    <!-- Start features -->
-    <section id="features" class="white-bg">
-      <div class="container">
-        <div class="row divide-md">
-          <!-- Top content / image feature -->
-          <div
-            class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 divide-md text-center"
-          >
-            <hr class="title-divider" />
+        <div class="clearfix"></div>
+        <div class="col-sm-12 divide-md">
+          <img class="img-responsive" src="img/features-01.jpg" alt="" />
+        </div>
+        <div class="clearfix"></div>
+        <!-- Feature #1 -->
+        <div class="col-sm-4 divide-md media">
+          <div class="media-left">
+            <div class="divya-icon-features">
+              <svg viewBox="0 0 32 32">
+                <use xlink:href="#bubble-speach"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="media-body">
+            <h3>Lung Infections</h3>
             <p>
-              Dr. Divya has recived M.D. from M.E.S. Medical College
-              (Perintalmanna). She has received M.B.B.S. from jubilee mission
-              hospital (Thrissur).
+              Your doctor will advise you about any medications you need to
+              get over this attack.Review with your doctor within 48 hours if
+              you are not improving, and again in six weeks to make sure that
+              you have made a full recovery.
             </p>
           </div>
-          <div class="clearfix"></div>
-          <div class="col-sm-12 divide-md">
-            <img class="img-responsive" src="img/features-01.jpg" alt="" />
-          </div>
-          <div class="clearfix"></div>
-          <!-- Feature #1 -->
-          <div class="col-sm-4 divide-md media">
-            <div class="media-left">
-              <div class="divya-icon-features">
-                <svg viewBox="0 0 32 32">
-                  <use xlink:href="#bubble-speach"></use>
-                </svg>
-              </div>
+        </div>
+        <!-- Feature #2 -->
+        <div class="col-sm-4 divide-md media">
+          <div class="media-left">
+            <div class="divya-icon-features">
+              <svg viewBox="0 0 32 32">
+                <use xlink:href="#happy-smiley"></use>
+              </svg>
             </div>
-            <div class="media-body">
-              <h3>Lung Infections</h3>
+          </div>
+          <div class="media-body">
+            <h3>Sleep disorders</h3>
+            <p>
+              Your doctor may recommend cognitive behavioral therapy,
+              medications or both, to help improve relaxation and sleep, also
+              provide strategies related to your lifestyle and sleep
+              environment to help you develop habits that promote sound sleep
+              and daytime alertness.
+            </p>
+          </div>
+        </div>
+        <!-- Feature #3 -->
+        <div class="col-sm-4 divide-md media">
+          <div class="media-left">
+            <div class="divya-icon-features">
+              <svg viewBox="0 0 32 32">
+                <use xlink:href="#armchair-chair"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="media-body">
+            <h3>Other Respiratory Problems</h3>
+            <p>
+              Your doctor can help you with Bronchitis, Emphysema, Lung
+              Cancer, Pneumonia, Fibrosis/Bronchiectasis, etc.
+            </p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </section>
+  <!-- End features -->
+  <!-- Start works header -->
+  <section id="works-top" class="parallax" data-bottom-top="background-position: 50% -50px;"
+    data-top-bottom="background-position: 50% 0px;">
+    <div class="section-overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 divide-xl text-center">
+          <h1 class="light">Tests</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End works header -->
+  <!-- Start works -->
+  <section id="works" class="white-bg">
+    <div class="container">
+      <!-- Start #1 Content rigth / Image left -->
+      <div class="row">
+        <div class="divide-sm"></div>
+        <div class="col-sm-6">
+          <div class="squared">
+            <div class="squared-content">
+              <h2>Spirometry</h2>
+              <h5 class="smoke"><small>Spirometry</small></h5>
               <p>
-                Your doctor will advise you about any medications you need to
-                get over this attack.Review with your doctor within 48 hours if
-                you are not improving, and again in six weeks to make sure that
-                you have made a full recovery.
+                Spirometry may be carried out to check the severity of the
+                condition and to see how you're responding to treatment. It
+                can also be used to help diagnose a lung condition if you have
+                symptoms of a problem, or your doctor feels you're at an
+                increased risk of developing a particular lung condition.
               </p>
             </div>
           </div>
-          <!-- Feature #2 -->
-          <div class="col-sm-4 divide-md media">
-            <div class="media-left">
-              <div class="divya-icon-features">
-                <svg viewBox="0 0 32 32">
-                  <use xlink:href="#happy-smiley"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="media-body">
-              <h3>Sleep disorders</h3>
-              <p>
-                Your doctor may recommend cognitive behavioral therapy,
-                medications or both, to help improve relaxation and sleep, also
-                provide strategies related to your lifestyle and sleep
-                environment to help you develop habits that promote sound sleep
-                and daytime alertness.
-              </p>
-            </div>
-          </div>
-          <!-- Feature #3 -->
-          <div class="col-sm-4 divide-md media">
-            <div class="media-left">
-              <div class="divya-icon-features">
-                <svg viewBox="0 0 32 32">
-                  <use xlink:href="#armchair-chair"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="media-body">
-              <h3>Other Respiratory Problems</h3>
-              <p>
-                Your doctor can help you with Bronchitis, Emphysema, Lung
-                Cancer, Pneumonia, Fibrosis/Bronchiectasis, etc.
-              </p>
-            </div>
-          </div>
-          <div class="clearfix"></div>
         </div>
-      </div>
-    </section>
-    <!-- End features -->
-    <!-- Start works header -->
-    <section
-      id="works-top"
-      class="parallax"
-      data-bottom-top="background-position: 50% -50px;"
-      data-top-bottom="background-position: 50% 0px;"
-    >
-      <div class="section-overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 divide-xl text-center">
-            <h1 class="light">Tests</h1>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End works header -->
-    <!-- Start works -->
-    <section id="works" class="white-bg">
-      <div class="container">
-        <!-- Start #1 Content rigth / Image left -->
-        <div class="row">
-          <div class="divide-sm"></div>
-          <div class="col-sm-6">
-            <div class="squared">
-              <div class="squared-content">
-                <h2>Spirometry</h2>
-                <h5 class="smoke"><small>Spirometry</small></h5>
-                <p>
-                  Spirometry may be carried out to check the severity of the
-                  condition and to see how you're responding to treatment. It
-                  can also be used to help diagnose a lung condition if you have
-                  symptoms of a problem, or your doctor feels you're at an
-                  increased risk of developing a particular lung condition.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="divide-sm visible-xs"></div>
-          <div class="col-sm-6">
-            <div class="squared">
-              <div class="squared-content">
-                <div id="carousel-1" class="carousel">
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <img src="img/works/works-01.jpg" alt="" />
-                    </div>
-                    <div class="item">
-                      <img src="img/works/works-02.jpg" alt="" />
-                    </div>
+        <div class="divide-sm visible-xs"></div>
+        <div class="col-sm-6">
+          <div class="squared">
+            <div class="squared-content">
+              <div id="carousel-1" class="carousel">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="img/works/works-01.jpg" alt="" />
                   </div>
-                  <button
-                    class="left carousel-control"
-                    href="#carousel-1"
-                    data-slide="prev"
-                  >
-                    <i class="fa fa-angle-left"></i>
-                  </button>
-                  <button
-                    class="right carousel-control"
-                    href="#carousel-1"
-                    data-slide="next"
-                  >
-                    <i class="fa fa-angle-right"></i>
-                  </button>
+                  <div class="item">
+                    <img src="img/works/works-02.jpg" alt="" />
+                  </div>
                 </div>
+                <button class="left carousel-control" href="#carousel-1" data-slide="prev">
+                  <i class="fa fa-angle-left"></i>
+                </button>
+                <button class="right carousel-control" href="#carousel-1" data-slide="next">
+                  <i class="fa fa-angle-right"></i>
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <!-- End #1 -->
-        <hr class="no-margin" />
       </div>
-    </section>
-    <!-- End works -->
-    <!-- Start team header -->
-    <section
-      id="team-top"
-      class="parallax"
-      data-bottom-top="background-position: 50% -50px;"
-      data-top-bottom="background-position: 50% 0px;"
-    >
-      <div class="section-overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 divide-xl text-center">
-            <h1 class="light">Locate us</h1>
-          </div>
+      <!-- End #1 -->
+      <hr class="no-margin" />
+    </div>
+  </section>
+  <!-- End works -->
+  <!-- Start team header -->
+  <section id="team-top" class="parallax" data-bottom-top="background-position: 50% -50px;"
+    data-top-bottom="background-position: 50% 0px;">
+    <div class="section-overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 divide-xl text-center">
+          <h1 class="light">Locate us</h1>
         </div>
       </div>
-    </section>
-    <!-- End team header-->
+    </div>
+  </section>
+  <!-- End team header-->
 
-    <!-- Start contact -->
-    <section id="contact" class="white-bg">
-      <div class="container">
-        <div class="row divide-md">
-          <!-- Icon #1 -->
-          <a href="mailto:info.drdivya@gmail.com" target="_top">
-            <div class="col-sm-4 divide-sm text-center">
-              <div class="divya-icon-info">
-                <svg viewBox="0 0 32 32">
-                  <use xlink:href="#email-mail"></use>
-                </svg>
-              </div>
-              <div class="divide-xs"></div>
-              <p>info.drdivya@gmail.com</p>
-              <h4>Email</h4>
-            </div>
-          </a>
-          <!-- Icon #2 -->
-          <a href="tel:07736029268" target="_top">
-            <div class="col-sm-4 divide-sm text-center">
-              <div class="divya-icon-info">
-                <svg viewBox="0 0 32 32">
-                  <use xlink:href="#iphone"></use>
-                </svg>
-              </div>
-              <div class="divide-xs"></div>
-              <p>07736029268</p>
-              <h4>Enquiry and Appointment</h4>
-            </div>
-          </a>
-          <!-- Icon #3 -->
+  <!-- Start contact -->
+  <section id="contact" class="white-bg">
+    <div class="container">
+      <div class="row divide-md">
+        <!-- Icon #1 -->
+        <a href="mailto:info.drdivya@gmail.com" target="_top">
           <div class="col-sm-4 divide-sm text-center">
             <div class="divya-icon-info">
               <svg viewBox="0 0 32 32">
-                <use xlink:href="#tag"></use>
+                <use xlink:href="#email-mail"></use>
               </svg>
             </div>
             <div class="divide-xs"></div>
-            <p>Convent Road, Aranattukara, Thrissur, PIN 680618</p>
-            <h4>Address</h4>
+            <p>info.drdivya@gmail.com</p>
+            <h4>Email</h4>
           </div>
-          <div class="clearfix"></div>
+        </a>
+        <!-- Icon #2 -->
+        <a href="tel:07736029268" target="_top">
+          <div class="col-sm-4 divide-sm text-center">
+            <div class="divya-icon-info">
+              <svg viewBox="0 0 32 32">
+                <use xlink:href="#iphone"></use>
+              </svg>
+            </div>
+            <div class="divide-xs"></div>
+            <p>07736029268</p>
+            <h4>Enquiry and Appointment</h4>
+          </div>
+        </a>
+        <!-- Icon #3 -->
+        <div class="col-sm-4 divide-sm text-center">
+          <div class="divya-icon-info">
+            <svg viewBox="0 0 32 32">
+              <use xlink:href="#tag"></use>
+            </svg>
+          </div>
           <div class="divide-xs"></div>
-
-          <!-- Start contact header / Google Map -->
-          <section id="contact-top">
-            <a
-              href="https://www.google.com/maps/place/Dr.+Divya/@10.5113558,76.1920859,17z/data=!4m13!1m7!3m6!1s0x3ba7ee117cc819eb:0xd8bdafd4ef150b0f!2sSVS+Nagar+Rd,+Therumadam,+Aranattukara,+Thrissur,+Kerala+680618!3b1!8m2!3d10.5113523!4d76.1935467!3m4!1s0x3ba7ef19af6dc111:0xa9e209bff93fbec6!8m2!3d10.5113523!4d76.1935467"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <div class="mapObj"></div>
-            </a>
-          </section>
-          <!-- End contact header / Google Map -->
-
-          <!-- Contact form -->
-          <div class="clearfix"></div>
-          <div class="divide-xs"></div>
-          <div class="divide-xs"></div>
+          <p>Convent Road, Aranattukara, Thrissur, PIN 680618</p>
+          <h4>Address</h4>
         </div>
+        <div class="clearfix"></div>
+        <div class="divide-xs"></div>
+
+        <!-- Start contact header / Google Map -->
+        <section id="contact-top">
+          <a href="https://www.google.com/maps/place/Dr.+Divya/@10.5113558,76.1920859,17z/data=!4m13!1m7!3m6!1s0x3ba7ee117cc819eb:0xd8bdafd4ef150b0f!2sSVS+Nagar+Rd,+Therumadam,+Aranattukara,+Thrissur,+Kerala+680618!3b1!8m2!3d10.5113523!4d76.1935467!3m4!1s0x3ba7ef19af6dc111:0xa9e209bff93fbec6!8m2!3d10.5113523!4d76.1935467"
+            rel="noreferrer" target="_blank">
+            <div class="mapObj"></div>
+          </a>
+        </section>
+        <!-- End contact header / Google Map -->
+
+        <!-- Contact form -->
+        <div class="clearfix"></div>
+        <div class="divide-xs"></div>
+        <div class="divide-xs"></div>
       </div>
-    </section>
-    <!-- End contact -->
-    <!-- Start footer -->
-    <footer class="smoke-bg">
-      <div class="container">
-        <div class="row text-center">
-          <!-- Footer menu -->
-          <div class="clearfix"></div>
-          <div class="divide-sm"></div>
-          <!-- Social networks -->
-          <div class="col-sm-12 divide-xs">
-            <a
-              class="facebook"
-              rel="noreferrer"
-              href="https://www.facebook.com/doctordivyas"
-              target="_blank"
-              >Facebook</a
-            >
-            <a
-              class="twitter"
-              rel="noreferrer"
-              href="https://twitter.com/DivyaDoctor"
-              target="_blank"
-              >Twitter</a
-            >
-            <a
-              class="google"
-              rel="noreferrer"
-              href="https://www.youtube.com/channel/UC08P1CyWyhr5yqk-zwz0ARg"
-              target="_blank"
-              >Youtube</a
-            >
-            <a
-              class="instagram"
-              rel="noreferrer"
-              href="https://instagram.com/doctordivya_?igshid=z24gtjiofe88"
-              target="_blank"
-              >Instagram</a
-            >
-          </div>
-          <!-- Copyright -->
-          <div class="col-sm-12 divide-xs">
-            <p>
-              <small
-                >Copyright &copy; 2020 doctordivya. All rights reserved.</small
-              >
-            </p>
-          </div>
-          <div class="clearfix"></div>
-          <div class="divide-sm"></div>
+    </div>
+  </section>
+  <!-- End contact -->
+  <!-- Start footer -->
+  <footer class="smoke-bg">
+    <div class="container">
+      <div class="row text-center">
+        <!-- Footer menu -->
+        <div class="clearfix"></div>
+        <div class="divide-sm"></div>
+        <!-- Social networks -->
+        <div class="col-sm-12 divide-xs">
+          <a class="facebook" rel="noreferrer" href="https://www.facebook.com/doctordivyas" target="_blank">Facebook</a>
+          <a class="twitter" rel="noreferrer" href="https://twitter.com/DivyaDoctor" target="_blank">Twitter</a>
+          <a class="google" rel="noreferrer" href="https://www.youtube.com/channel/UC08P1CyWyhr5yqk-zwz0ARg"
+            target="_blank">Youtube</a>
+          <a class="instagram" rel="noreferrer" href="https://instagram.com/doctordivya_?igshid=z24gtjiofe88"
+            target="_blank">Instagram</a>
         </div>
+        <!-- Copyright -->
+        <div class="col-sm-12 divide-xs">
+          <p>
+            <small>Copyright &copy; 2020 doctordivya. All rights reserved.</small>
+          </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="divide-sm"></div>
       </div>
-    </footer>
-    <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker.register("sw.js");
-        });
-      }
-    </script>
-    <!-- End footer -->
-    <!-- Start scripts - IMPORTANT: all scripts except modernizr and html5shiv MUST be loaded after jquery.min.js as now -->
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Main Bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Retina support -->
-    <script src="js/retina.js"></script>
-    <!-- Animated elements -->
-    <script src="js/imagesloaded.min.js"></script>
-    <script src="js/skrollr.js"></script>
-    <!--[if lt IE 9]>
+    </div>
+  </footer>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("sw.js");
+      });
+    }
+  </script>
+  <!-- End footer -->
+  <!-- Start scripts - IMPORTANT: all scripts except modernizr and html5shiv MUST be loaded after jquery.min.js as now -->
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Main Bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Retina support -->
+  <script src="js/retina.js"></script>
+  <!-- Animated elements -->
+  <script src="js/imagesloaded.min.js"></script>
+  <script src="js/skrollr.js"></script>
+  <!--[if lt IE 9]>
       <script src="skrollr.ie.js"></script>
     <![endif]-->
-    <!-- Smooth scroll -->
-    <script src="js/jquery.scrollto.min.js"></script>
-    <script src="js/jquery.easing.js"></script>
-    <script src="js/jquery.localscroll.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <!-- Gallery lightbox -->
-    <script src="js/ekko-lightbox.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.flowuplabels.js"></script>
-    <!-- Custom scripts and triggers -->
-    <script src="js/custom.js"></script>
-    <!-- End scripts -->
-  </body>
+  <!-- Smooth scroll -->
+  <script src="js/jquery.scrollto.min.js"></script>
+  <script src="js/jquery.easing.js"></script>
+  <script src="js/jquery.localscroll.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <!-- Gallery lightbox -->
+  <script src="js/ekko-lightbox.min.js"></script>
+  <script src="js/jquery.form.js"></script>
+  <script src="js/jquery.flowuplabels.js"></script>
+  <!-- Custom scripts and triggers -->
+  <script src="js/custom.js"></script>
+  <!-- End scripts -->
+</body>
+
 </html>
